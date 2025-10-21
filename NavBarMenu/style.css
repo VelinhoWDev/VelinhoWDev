@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.menuPrincipal{
+    background-color: rgb(211, 211, 245);
+    width: 100vw;
+    height: 90px;
+}
+
+.heroSection{
+    background-color: gray;
+    width: 100vw;
+    height: 90vh;
+    background: url(img/Wallpaper\ Anime.jpg) no-repeat center center/cover;
+
+}
