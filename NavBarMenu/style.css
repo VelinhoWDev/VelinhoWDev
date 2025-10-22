@@ -75,13 +75,70 @@
     background: grey;
     width: 20vw;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLogo a{
+     font-family: "Michroma";
+     font-weight: 600;
+     font-size: 1.6rem;
+     color: #ffffff;
 }
 
 .menuLink{
     background: green;
-    width: 50vw;
-    height: 100%;
+    
+    width: 50vw;             /* largura = 50% da largura da viewport */
+    height: 100%;            /* altura = 100% da altura da viewport (garante ocupa toda a janela) */
+    margin: 0 auto;          /* centra horizontalmente o elemento (auto nas laterais) */
+    display: flex;           /* ativa flexbox para alinhar o conteúdo interno */
+    align-items: center;     /* centra verticalmente o conteúdo dentro da div */
+    justify-content: center; /* centra horizontalmente o conteúdo dentro da div */
 }
+
+.menuLink ul {
+    /*display: flex;
+    justify-content: center;*/
+
+    list-style: none;       /* remove os marcadores (bullets) da lista */
+    padding: 0;             /* remove preenchimento interno padrão do ul */
+    margin: 0;              /* remove margem padrão do ul */
+    display: flex;          /* coloca os <li> em linha (horizontal) */
+    gap: 1.5rem;            /* espaço entre os itens do menu */
+    align-items: stretch;   /* garante que os <li> tenham alturas compatíveis */
+}
+
+.menuLink ul li{
+    /*list-style: none;
+    display: flex;*/
+    height: auto;           /* altura automática; o <a> dentro fará o "visual" de barra */
+}
+
+.menuLink ul li a{
+    /*text-decoration: none;
+    color: #ffffff;*/
+
+     display: inline-block;  /* permite padding e fundo a comportarem-se como bloco */
+    padding: 0.75rem 1rem;  /* espaço interior (vertical e horizontal) para tornar o link fácil de clicar */
+    text-decoration: none;  /* remove sublinhado e outras decorações */
+    color: #ffffff;         /* torna o texto branco */
+    background: transparent;/* fundo transparente por defeito */
+    border-radius: 6px;     /* canto ligeiramente arredondado (estético) */
+    transition: background 200ms ease, color 200ms ease; /* animação suave no hover */
+}
+
+
+.menuLink ul li a:hover,
+.menuLink ul li a:focus {
+  color: #0057ff;         /* cor do texto azul quando o utilizador passa o rato */
+  background: #ff8a00;    /* fundo laranja que cobre toda a área do link (graças a display:inline-block e padding) */
+  outline: none;          /* remove outline padrão do navegador ao focar (podes retirar se preferires acessibilidade) */
+}
+
+
+
 
 .menuBtn{
     background: yellow;
