@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 
-
+/*
 .navContainer{
     display: flex;
     align-items: center;
@@ -32,9 +32,9 @@
     width: 100%;
     padding: 0 3rem;
     max-width: 1600px;
-}
+}*/
 
-.navLogo a {
+/*.navLogo a {
     color: #ffffff;
     font-family: "Michroma", sans-serif;
     font-weight: 500;
@@ -69,20 +69,32 @@
     border: 2px solid transparent;
     
     white-space: nowrap;
+}*/
+
+.navLogo{
+    background: grey;
+    width: 20vw;
+    height: 100%;
 }
 
-.menuPrincipal .navContainer li:hover{
-   height: 80px;
-   background: orangered;
-   transition: all 0.5s ease-in;
+.menuLink{
+    background: green;
+    width: 50vw;
+    height: 100%;
+}
+
+.menuBtn{
+    background: yellow;
+    width: 15vw;
+    height: 100%;
 }
 
 
-
-
-
-
-
+.menuSocial{
+    background: salmon;
+    width: 15vw;
+    height: 100%;
+}
 
 .heroSection{
     width: 100vw;
