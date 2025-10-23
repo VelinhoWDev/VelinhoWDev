@@ -72,7 +72,6 @@
 }*/
 
 .navLogo{
-    background: grey;
     width: 20vw;
     height: 100%;
     display: flex;
@@ -88,7 +87,6 @@
 }
 
 .menuLink{
-    background: green;
     
     width: 50vw;             /* largura = 50% da largura da viewport */
     height: 100%;            /* altura = 100% da altura da viewport (garante ocupa toda a janela) */
@@ -133,24 +131,39 @@
 .menuLink ul li a:hover,
 .menuLink ul li a:focus {
   color: #0057ff;         /* cor do texto azul quando o utilizador passa o rato */
-  background: #ff8a00;    /* fundo laranja que cobre toda a área do link (graças a display:inline-block e padding) */
+  /*background: #ff8a00;    fundo laranja que cobre toda a área do link (graças a display:inline-block e padding) */
   outline: none;          /* remove outline padrão do navegador ao focar (podes retirar se preferires acessibilidade) */
+  margin-bottom: 2px solid #ff8a00;
 }
 
 
 
 
 .menuBtn{
-    background: yellow;
     width: 15vw;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha{
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    background: black;
 }
 
 
+
 .menuSocial{
-    background: salmon;
     width: 15vw;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
 }
 
 .heroSection{
