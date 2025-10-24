@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+
+    /*Remover toda configuação padrão do browser, espaçamento e margens*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background:#0f172a;
+}
+
+
+nav{
+    width: 100%;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2rem;
+
+    /*Posicionamento dos itens dentro do menu*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #e2e8f0;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+
+.btns{
+    display: flex;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 0 15px #38bdf8;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #0aa9f3;
+}
+
+
+
+
+/*Exemplo II alteração nav, logo, nav-links*/
+.exemplo2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo2{
+    color: greenyellow;
+    margin-right: auto;
+}
+
+.nav-links-2{
+    margin-right: 30px;
+}
