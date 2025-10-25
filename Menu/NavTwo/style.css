@@ -9,6 +9,8 @@
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -92,4 +94,79 @@ nav .nav-group{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.hero-opacity{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: rgba(37, 45, 49, 0.3);
+    
+}
+
+.hero-decription{
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45vh;
+    
+}
+
+.description-tittle h2{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    text-shadow: 0 0 5px #0f172a;
+}
+
+
+.btn-callsection{
+    margin-top: 8vh;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.call{
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.start{
+    background: #2efd04;
+    color: #0f172a;
+}
+
+.start:hover{
+    background: #ff1493;
+    color: #ffffff;
+    box-shadow: 0 0 8px #ff1493;
+
+}
+
+
+.moreinfo{
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-shadow: 0 0 5px #0f172a;
+}
+
+.moreinfo:hover{
+    background: #ff1493;
+    border: 2px solid #ff1493;
+    color: #ffffff;
+    box-shadow: 0 0 8px #ff1493;
+   
+}
+
