@@ -21,6 +21,7 @@ nav{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(9px); /*Opacidade*/
     margin-bottom: 2rem;
+    position: fixed;
 
 
     /*Posicionamento dos elementos*/
@@ -35,6 +36,7 @@ nav{
     font-weight: 700;
     letter-spacing: 1px;
     color: #ff1493;
+    cursor: pointer;
 }
 
 .nav-links{
@@ -89,7 +91,7 @@ nav .nav-group{
 
 .hero{
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     background: url(img/Road\ Future.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,7 +104,7 @@ nav .nav-group{
 .hero-opacity{
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 110%;
     background: rgba(37, 45, 49, 0.3);
     
 }
@@ -123,6 +125,18 @@ nav .nav-group{
     position: relative;
     text-shadow: 0 0 5px #0f172a;
 }
+
+
+.description-tittle h3{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    text-shadow: 0 0 5px #0f172a;
+}
+
 
 
 .btn-callsection{
@@ -167,6 +181,56 @@ nav .nav-group{
     border: 2px solid #ff1493;
     color: #ffffff;
     box-shadow: 0 0 8px #ff1493;
-   
 }
 
+.postais{
+    width: 100%;
+    height: 90vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bussola{
+   margin-top: 2rem;
+   display: flex;
+}
+
+.bussola-logo{
+    width: 9rem;
+
+    animation: GirarBussola;
+    animation-timeline: view();
+    
+}
+
+@keyframes GirarBussola{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.discover-tittle{
+    padding: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: AparicaoTexto;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes AparicaoTexto {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
