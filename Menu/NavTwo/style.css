@@ -342,8 +342,21 @@ nav .nav-group {
 .bronze h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: burlywood;
+    color: #CD7F32;
 }
+
+.prata h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #e9e6e6;
+}   
+
+.ouro h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ECC440;
+} 
+
 
 .descricao {
     font-weight: bold;
@@ -363,14 +376,34 @@ nav .nav-group {
    list-style-position: inside;
 }
 
-.texto-preco{
-    color: burlywood;
+.preco-bronze{
+    color: #CD7F32;
 }
 
-.texto-preco span{
+.preco-bronze span{
     font-weight: bold;
     font-size: 1.4rem
 }
+
+.preco-prata{
+    color: #e9e6e6;
+}
+
+.preco-prata span{
+    font-weight: bold;
+    font-size: 1.4rem
+}
+
+
+.preco-ouro{
+    color:  #ECC440;
+}
+
+.preco-ouro span{
+    font-weight: bold;
+    font-size: 1.4rem
+}
+
 
 .btn-reservar{
     margin-top: 1.5rem;
@@ -391,4 +424,34 @@ nav .nav-group {
     background: #063dbc;
     color: #ffffff;
     box-shadow: 0 0 8px #0f172a;
+}
+
+/* Início do footer*/
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background: #0f172a;
+    padding: 2rem 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+small{
+    color: #ffffff;
+}
+
+.logofooter {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ff1493;
+    cursor: pointer;
 }
